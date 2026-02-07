@@ -10,12 +10,12 @@
             font-family: 'Arial', sans-serif;
             background: linear-gradient(to right, #ff9a9e, #fad0c4);
             text-align: center;
-            padding: 50px;
+            padding: 10px;
             color: #333;
         }
 
         h1 {
-            font-size: 2.5em;
+            font-size: 2em;
             color: #fff;
             text-shadow: 2px 2px #ff6f91;
         }
@@ -23,7 +23,7 @@
         select,
         button {
             padding: 10px 20px;
-            font-size: 1.2em;
+            font-size: 1em;
             margin-top: 20px;
             border-radius: 8px;
             border: none;
@@ -32,15 +32,32 @@
 
         #mensaje,
         #gatitos {
-            margin-top: 30px;
-            font-size: 1.3em;
+            margin-top: 20px;
+            font-size: 1.2em;
         }
 
         #gatitos img {
             margin-top: 20px;
-            width: 300px;
+            width: 100%;
+            max-width: 400px;
             border-radius: 15px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            select,
+            button {
+                font-size: 0.9em;
+            }
+
+            #mensaje,
+            #gatitos {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
@@ -82,10 +99,10 @@
             } else if (valor === 'si') {
                 mensaje.textContent = "Soy un migajoso de la ostia jajaja ya te jodiste!! estoy deseando pasar ese día contigo 💕";
                 gatitos.innerHTML = `
-        <img src="IMG_4476.jpg" alt="Así te me vas a abrir">
-        <p> Así te me vas a abrir jajajaja</p>
-        <p>Un día contigo es el mejor regalo💖 (y una comdidita jeje)</p>
-      `;
+            <img src="https://raw.githubusercontent.com/Joellesglez/sanvalentin/main/IMG_4476.jpg" alt="Así te me vas a abrir">
+            <p> Así te me vas a abrir jajajaja</p>
+            <p>Un día contigo es el mejor regalo💖 (y una comidita jeje)</p>
+        `;
             }
         });
     </script>
