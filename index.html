@@ -1,112 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>San Valentín Ashley Pérez Herrera y Joëlle 💖</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(to right, #ff9a9e, #fad0c4);
-            text-align: center;
-            padding: 10px;
-            color: #333;
-        }
-
-        h1 {
-            font-size: 2em;
-            color: #fff;
-            text-shadow: 2px 2px #ff6f91;
-        }
-
-        select,
-        button {
-            padding: 10px 20px;
-            font-size: 1em;
-            margin-top: 20px;
-            border-radius: 8px;
-            border: none;
-            cursor: pointer;
-        }
-
-        #mensaje,
-        #gatitos {
-            margin-top: 20px;
-            font-size: 1.2em;
-        }
-
-        #gatitos img {
-            margin-top: 20px;
-            width: 100%;
-            max-width: 400px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 1.5em;
-            }
-
-            select,
-            button {
-                font-size: 0.9em;
-            }
-
-            #mensaje,
-            #gatitos {
-                font-size: 1em;
-            }
-        }
-    </style>
+    <title>San Valentín</title>
 </head>
-
 <body>
-
-    <h1 id="frase">Feliz San Valentín 💖 San Valentín Ashley Pérez Herrera y Joëlle 💖</h1>
-
-    <select id="opciones">
-        <option value="">¿Quieres pasar el 14 de febrero conmigo? (después de la resaca)</option>
-        <option value="si">Sí</option>
-        <option value="no">No</option>
-    </select>
-
-    <div id="mensaje"></div>
-    <div id="gatitos"></div>
-
-    <script>
-        const frases = [
-            "Somos de quien nos cuida ❤️",
-        ];
-
-        // Elegir una frase bonita al azar al cargar la página
-        document.getElementById('frase').textContent = frases[Math.floor(Math.random() * frases.length)];
-
-        const select = document.getElementById('opciones');
-        const mensaje = document.getElementById('mensaje');
-        const gatitos = document.getElementById('gatitos');
-
-        select.addEventListener('change', () => {
-            const valor = select.value;
-
-            if (valor === 'no') {
-                mensaje.textContent = "Te conozco Ashley, no te hagas la remolina tienes que poner: ¡Sí!";
-                // Eliminar la opción "No"
-                select.querySelector('option[value="no"]').remove();
-                select.value = '';
-                gatitos.innerHTML = '';
-            } else if (valor === 'si') {
-                mensaje.textContent = "Soy un migajoso de la ostia jajaja ya te jodiste!! estoy deseando pasar ese día contigo 💕";
-                gatitos.innerHTML = `
-            <img src="https://raw.githubusercontent.com/Joellesglez/sanvalentin/main/IMG_4476.jpg" alt="Así te me vas a abrir">
-            <p> Así te me vas a abrir jajajaja</p>
-            <p>Un día contigo es el mejor regalo💖 (y una comidita jeje)</p>
-        `;
-            }
-        });
-    </script>
-
+    <h1>Bienvenido a la celebración del San Valentín</h1>
+    <img src="sanvalentin/IMG_4476.jpg" alt="Imagen de San Valentín" style="max-width: 100%; height: auto;">
+    <p>Disfruta de este día especial con tus seres queridos.</p>
 </body>
-
 </html>
